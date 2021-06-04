@@ -1,0 +1,15 @@
+extends ../layouts/main.pug
+
+block content 
+    .createBox  
+        h2 새로운 메모 작성하기
+            form(action="/postCreate" method="post")
+                textarea(name="title", placeholder="제목을 입력해주세요")
+                textarea(name="desc", placeholder="내용을 입력해주세요")
+                button(type="submit") 등록하기
+            
+                
+            form(action="/" method="get")
+                button(type="submit") 목록으로
+
+        

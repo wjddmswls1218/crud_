@@ -1,0 +1,21 @@
+extends ../layouts/main.pug
+
+block content 
+    form(action="/create" method="GET")
+        button(type="submit") 추가하기
+    section.list 
+        each data in dataLIST
+            ul
+                li #{data.title}
+                li #{data.contents}
+                li #{data.created}
+        
+                
+
+
+        
+            
+
+
+
+                
